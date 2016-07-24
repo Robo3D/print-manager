@@ -20,6 +20,15 @@ When unzipped please edit the localConfig.json file to use this.
 1. Install node version 0.11.16 (not the latest) found here:
    https://nodejs.org/download/release/v0.11.16/
    NOTE: C++ platform tools are required to build some of the modules.
+   
+   To install on Debian 8 with OctoPrint:
+   "wget https://nodejs.org/dist/v0.11.16/node-v0.11.16.tar.gz"
+   extract 
+   export PYTHON=~/oprint/bin/python
+   $PYTHON ./configure
+   make
+   make install
+
 2. CD spark-print-mgr 
 3. Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
 
