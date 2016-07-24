@@ -16,10 +16,10 @@ For Print Manager to start you must download the geometry processor that is atta
 When unzipped please edit the localConfig.json file to use this.
 
 
-## Quick Start  
+## Quick Install Node.js  
 
    To install on Debian 8 with OctoPrint:
-1. Install Node.js and NPM
+   
   Step 1 - Update your system
   ```
   sudo apt-get update
@@ -57,8 +57,8 @@ When unzipped please edit the localConfig.json file to use this.
   ```
   That’s all.
 
-2. CD spark-print-mgr 
-3. Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
+1. CD spark-print-mgr 
+2. Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
 
 {
          "roopaServerPath" : "C:/SPARK/Release/runTime/RoopaServer.app/Contents/MacOS/RoopaServer"
@@ -66,12 +66,9 @@ When unzipped please edit the localConfig.json file to use this.
 
    The above will work for Mac OS*.
 
-4. npm install   
-5. node Server.js (will start server on localhost:9998)  
-6. Go to: http://localhost:9998/printdb/printertypes to see normal execution
+3. node Server.js (will start server on localhost:9998)  
+4. Go to: http://localhost:9998/printdb/printertypes to see normal execution
 
-You can fork this project. If you want to submit contributions, please complete the contributers agreement.
- 
 If you see any issues please use the github issue mechanism. 
  
 If you are building on Windows, install Bonjour SDK from the Apple Store and make sure the variable  BONJOUR_SDK_HOME is set to the location.   
