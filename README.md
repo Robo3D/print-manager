@@ -58,10 +58,10 @@ When unzipped please edit the localConfig.json file to use this.
   That’s all.
   
   If npm is giving you problems, this is my current fix:
-  '''
+  ```
   npm install -g n
   npm install npm -g
-  '''
+  ```
 
 1. CD spark-print-mgr 
 2. Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
