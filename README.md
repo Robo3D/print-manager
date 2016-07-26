@@ -1,4 +1,4 @@
-print-manager
+Autodesk Print Manager
 ===========
 
 Print Manager is a desktop utility which identifies and connects 3D printers and converts files for delivery to a particular model of 3D printer. The utility is used by Print Studio.
@@ -62,10 +62,9 @@ When unzipped please edit the localConfig.json file to use this.
   npm install npm -g
   ```
 ###Install RoopaServer
-I'm making it in a directory for now, this may change.
+Install this in the user directory - all RoopaServer functions are currently tied to this path!
 ```
-mkdir Roopa
-cd Roopa/
+cd~
 wget https://github.com/spark3dp/print-manager/releases/download/1.5.1/RoopaServer-0d221eaLinux.tar.gz
 tar -xzvf RoopaServer-0d221eaLinux.tar.gz
 ```
@@ -91,14 +90,4 @@ Go to: http://localhost:9998/printdb/printertypes to see normal execution
 
 If you see any issues please use the github issue mechanism. 
  
-If you are building on Windows, install Bonjour SDK from the Apple Store and make sure the variable  BONJOUR_SDK_HOME is set to the location.   
-
-*Here is an example of localConfig.json for Windows. 
-
-{
-         "roopaServerPath" : "C:\\\Users\\\joe\\\Release\\\runTime\\\bin\\\RoopaServer.exe",
-}
-
-
-
-
+And if you've reached this far without any errors, give yourself a pat on the back. 
