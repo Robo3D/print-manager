@@ -75,16 +75,19 @@ Clone the Spark printer-manager repo.
 git clone https://github.com/Robo3D/print-manager.git
 cd print-manager/
 ```
-#####Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
 
-{
-         "roopaServerPath" : "~/Roopa/bin/RoopaServer"
-}
+Run: ```npm install``` to install node modules
 
-   The above will work for Mac OS*.
+Create localConfig.json containing: 
+```
+cd spark-print-mgr
+sudo nano localConfig.json
+{ "roopaServerPath" : "/home/pi/bin/RoopaServer" }
+```
+Start server with ```node server.js```
+(will start server on localhost:9998)  
 
-3. node Server.js (will start server on localhost:9998)  
-4. Go to: http://localhost:9998/printdb/printertypes to see normal execution
+Go to: http://localhost:9998/printdb/printertypes to see normal execution
 
 If you see any issues please use the github issue mechanism. 
  
