@@ -39,7 +39,7 @@ When unzipped please edit the localConfig.json file to use this.
   Then compile and install Node like this:
   ```
   ./configure
-  make
+  sudo make
   sudo make install
   ```
   Then, check if node was installed correctly:
