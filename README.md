@@ -55,7 +55,6 @@ When unzipped please edit the localConfig.json file to use this.
   ```
   npm -v
   ```
-  That’s all.
   
   If npm is giving you problems, this is my current fix:
   ```
@@ -63,8 +62,13 @@ When unzipped please edit the localConfig.json file to use this.
   npm install npm -g
   ```
 
-1. CD spark-print-mgr 
-2. Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
+##Clone Spark Repo
+Clone the Spark printer-manager repo.
+```
+git clone https://github.com/Robo3D/print-manager.git
+cd print-manager/
+```
+###Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
 
 {
          "roopaServerPath" : "C:/SPARK/Release/runTime/RoopaServer.app/Contents/MacOS/RoopaServer"
