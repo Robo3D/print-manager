@@ -61,22 +61,24 @@ When unzipped please edit the localConfig.json file to use this.
   npm install -g n
   npm install npm -g
   ```
-###Install roopaServer
+###Install RoopaServer
+I'm making it in a directory for now, this may change.
 ```
+mkdir Roopa
+cd Roopa/
 wget https://github.com/spark3dp/print-manager/releases/download/1.5.1/RoopaServer-0d221eaLinux.tar.gz
+tar -xzvf RoopaServer-0d221eaLinux.tar.gz
 ```
-
-
 ###Clone Spark Repo
 Clone the Spark printer-manager repo.
 ```
 git clone https://github.com/Robo3D/print-manager.git
 cd print-manager/
 ```
-####Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
+#####Add localConfig.json to the spark-print-mgr directory with the following content (it contains the location to the prep server)
 
 {
-         "roopaServerPath" : "C:/SPARK/Release/runTime/RoopaServer.app/Contents/MacOS/RoopaServer"
+         "roopaServerPath" : "~/Roopa/bin/RoopaServer"
 }
 
    The above will work for Mac OS*.
