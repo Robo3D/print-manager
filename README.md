@@ -61,6 +61,11 @@ When unzipped please edit the localConfig.json file to use this.
   npm install -g n
   npm install npm -g
   ```
+###Install roopaServer
+```
+wget https://github.com/spark3dp/print-manager/releases/download/1.5.1/RoopaServer-0d221eaLinux.tar.gz
+```
+
 
 ###Clone Spark Repo
 Clone the Spark printer-manager repo.
